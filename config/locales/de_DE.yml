@@ -292,8 +292,8 @@ de_DE:
     search:
       start: Suche beginnen...
   landing:
-    about: "%{href} ist eine benutzerfreundliche Oberfläche für das Open-Source-Webkonferenzsystem BigBlueButton. Sie können Ihre eigenen Räume erstellen, um Konferenzen zu veranstalten oder können bestehenden Konferenzen über einen kurzen und bequemen Link beitreten."
-    welcome: Willkommen zu BigBlueButton.
+    about: "Sie können diese Installation von BigBlueButton der Evangelisch-lutherischen Landeskirche Hannovers für dienstliche Konferenzen, Präsentationen und Seminare nutzen. Bitte registrieren Sie sich zunächst im System - eine Freischaltung erfolgt nach Prüfung durch die Landeskirche. Fragen zum Vorgehen richten Sie bitte an den Support der Digitalen Agentur unter https://support.systeme-e.de"
+    welcome: Willkommen zum Online-Seminar.
     video: Schauen Sie sich unsere Anleitung zur Verwendung von Greenlight an
     upgrade: "Zeigen Sie mir, wie ich auf Version 2.0. update!"
     version: "Wir haben eine neue Version von Greenlight veröffentlicht, aber Ihre Datenbank ist damit nicht kompatibel."
