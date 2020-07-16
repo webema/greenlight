@@ -292,7 +292,7 @@ de_DE:
     search:
       start: Suche beginnen...
   landing:
-    about: "Sie können diese Installation von BigBlueButton der Evangelisch-lutherischen Landeskirche Hannovers für dienstliche Konferenzen, Präsentationen und Seminare nutzen. Bitte registrieren Sie sich zunächst im System - eine Freischaltung erfolgt nach Prüfung durch die Landeskirche. Fragen zum Vorgehen richten Sie bitte an den Support der Digitalen Agentur unter https://support.systeme-e.de"
+    about: "Sie können diese Installation von BigBlueButton der Evangelisch-lutherischen Landeskirche Hannovers für dienstliche Konferenzen, Präsentationen und Seminare nutzen. Bitte registrieren Sie sich zunächst im System - eine Freischaltung erfolgt nach Prüfung durch die Landeskirche. Fragen zum Vorgehen richten Sie bitte an den Support der Digitalen Agentur unter %{href}."
     welcome: Willkommen zum Online-Seminar
     video: Schauen Sie sich unsere Anleitung zur Verwendung von Greenlight an
     upgrade: "Zeigen Sie mir, wie ich auf Version 2.0. update!"
@@ -573,6 +573,7 @@ de_DE:
     subtitle: Konto erstellen
     title: Registrieren
     with: "Registrieren mit %{provider}"
+  support: https://support.systeme-e.de
   terms:
     accept: "Ich akzeptiere die %{href}"
     accept_existing: Ich akzeptiere die Teilnahmebedingungen
