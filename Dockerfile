@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-FROM ruby:2.5.8-alpine AS base
-=======
 FROM ruby:2.7.2-alpine AS base
->>>>>>> d33330f21fa8c04dcac9c019be14807ff4d4aade
 
 # Set a variable for the install location.
 ARG RAILS_ROOT=/usr/src/app
@@ -40,11 +36,7 @@ RUN rm -rf tmp/cache spec
 
 ############### Build step done ###############
 
-<<<<<<< HEAD
-FROM ruby:2.5.8-alpine
-=======
 FROM ruby:2.7.2-alpine
->>>>>>> d33330f21fa8c04dcac9c019be14807ff4d4aade
 
 # Set a variable for the install location.
 ARG RAILS_ROOT=/usr/src/app

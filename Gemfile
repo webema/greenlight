@@ -14,30 +14,6 @@ gem 'bigbluebutton-api-ruby', git: 'https://github.com/mconf/bigbluebutton-api-r
 gem 'bn-ldap-authentication', '~> 0.1.4'
 gem 'bootsnap', '~> 1.7.2', require: false
 gem 'bootstrap', '~> 4.3.1'
-<<<<<<< HEAD
-gem 'tabler-rubygem', git: 'https://github.com/blindsidenetworks/tabler-rubygem.git', tag: '0.1.4.1'
-gem 'pagy'
-gem 'font-awesome-sass', '~> 5.13.0'
-
-# For detecting the users preferred language.
-gem 'http_accept_language'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-# Markdown parsing.
-gem 'redcarpet'
-
-# For limiting access based on user roles
-gem 'cancancan', '~> 2.0'
-
-# Active Storage gems
-gem 'aws-sdk-s3', '~> 1.75'
-gem 'google-cloud-storage', '~> 1.26'
-
-gem 'pluck_to_hash', '~> 1.0.2'
-
-=======
 gem 'cancancan', '~> 2.3.0'
 gem 'coveralls', '~> 0.8.23', require: false
 gem 'font-awesome-sass', '~> 5.9.0'
@@ -47,7 +23,6 @@ gem 'i18n-language-mapping', '~> 0.1.3.1'
 gem 'jbuilder', '~> 2.11.2'
 gem 'jquery-rails', '~> 4.4.0'
 gem 'jquery-ui-rails', '~> 6.0.1'
->>>>>>> d33330f21fa8c04dcac9c019be14807ff4d4aade
 gem 'local_time', '~> 2.1.0'
 gem 'net-ldap', '~> 0.17.0'
 gem 'omniauth', '~> 1.9.1'
