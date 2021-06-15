@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 FROM ruby:2.5.8-alpine AS base
+=======
+FROM ruby:2.7.2-alpine AS base
+>>>>>>> d33330f21fa8c04dcac9c019be14807ff4d4aade
 
 # Set a variable for the install location.
 ARG RAILS_ROOT=/usr/src/app
@@ -24,9 +28,9 @@ COPY Gemfile Gemfile.lock $RAILS_ROOT/
 
 RUN bundle config --global frozen 1 \
     && bundle install --deployment --without development:test:assets -j4 --path=vendor/bundle \
-    && rm -rf vendor/bundle/ruby/2.5.0/cache/*.gem \
-    && find vendor/bundle/ruby/2.5.0/gems/ -name "*.c" -delete \
-    && find vendor/bundle/ruby/2.5.0/gems/ -name "*.o" -delete
+    && rm -rf vendor/bundle/ruby/2.7.0/cache/*.gem \
+    && find vendor/bundle/ruby/2.7.0/gems/ -name "*.c" -delete \
+    && find vendor/bundle/ruby/2.7.0/gems/ -name "*.o" -delete
 
 # Adding project files.
 COPY . .
@@ -36,7 +40,11 @@ RUN rm -rf tmp/cache spec
 
 ############### Build step done ###############
 
+<<<<<<< HEAD
 FROM ruby:2.5.8-alpine
+=======
+FROM ruby:2.7.2-alpine
+>>>>>>> d33330f21fa8c04dcac9c019be14807ff4d4aade
 
 # Set a variable for the install location.
 ARG RAILS_ROOT=/usr/src/app

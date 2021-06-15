@@ -175,6 +175,9 @@ gl:
         info: Dárlle a todos os usuarios os privilexios de moderador en BigBlueButton cando se unen á xuntanza.
       recordings:
         info: "Permitirlle aos propietarios de salas especificar se queren a opción para gravar unha sala ou non. Se está activado, o moderador aínda debe premer no botón «Gravar» unha vez iniciada a xuntanza."
+      moderator_codes:
+        info: Permitir aos propietarios de salas xerar opcionalmente un pin de moderador que permita a outros usuarios unirse directamente como moderadores.
+        title: Código de acceso do moderador
       options:
         disabled: Desactivado
         enabled: Activado sempre
@@ -226,6 +229,7 @@ gl:
   cookies:
     cookie_info: "As cookies axúdanos a prestar os nosos servizos. Ao usar os nosos servizos, acepta o noso uso de cookies."
     cookie_button: " Acepto"
+    policy: "Para obter máis información, consulte a nosa <a href=\"%{privacy_link}\"><u>directiva de privacidade</u></a>."
   copied: Copiado
   copy: Copiar
   date:
@@ -264,6 +268,7 @@ gl:
       accepted: ten que ser aceptado
       confirmation: "%{attribute} non coincide"
       inclusion: non está incluído na lista
+      domain: "debe rematar con «%{email_domain}»"
     no_provider:
       message: O sitio ao que está tentando acceder non está activo
       help: Póñase en contacto co administrador do sistema para configurar Greenlight
@@ -308,6 +313,7 @@ gl:
   home_room: Sala principal
   info_update_success: Actualizouse correctamente a información
   invalid_credentials: O correo e o contrasinal que introduciu non coinciden cos nosos rexistros. Tenteo de novo ou prema en «Esquecín o contrasinal» para restabelecer o seu contrasinal.
+  invalid_credentials_external: O correo e o contrasinal que introduciu non coinciden cos nosos rexistros. Tenteo de novo.
   invalid_login_method: Produciuse un fallo no acceso por mor da non coincidencia da conta. Debe acceder con omniauth.
   invite_message: "Para convidar a alguén á xuntanza, envíelle esta ligazón:"
   javascript:
@@ -352,6 +358,7 @@ gl:
         info: "Foi convidado ao seu propio espazo persoal por %{name}"
         signup_info: "Para rexistrarse usando o seu correo-e, prema no seguinte botón e siga os pasos."
         signup_link: Rexistrarse
+        valid: "O convite é valido ata: %{date}"
         signup:
           info: Un usuario que foi convidado rexistrouse para usar Greenlight.
           admins_link: Visite a páxina da organización
@@ -390,7 +397,9 @@ gl:
       title: Crear un novo rol
     create_room:
       access_code: Código de acceso
+      moderator_access_code: Código do moderador
       access_code_placeholder: Xerar un código de acceso á sala opcional
+      moderator_access_code_placeholder: Xera un código opcional para os moderadores
       auto_join: Unirse automaticamente comigo na sala
       create: Crear unha sala
       free_delete: Será libre de eliminar esta sala en calquera momento.
@@ -500,6 +509,7 @@ gl:
       visibility: Visibilidade
       formats: Formatos
     visibility:
+      inaccessible: Inaccesíbel
       public: Pública
       unlisted: Sen listar
     format:
@@ -525,6 +535,7 @@ gl:
   remove: Retirar
   rename: Renomear
   reset_password:
+    captcha: "Produciuse un fallo na verificación de reCAPTCHA, ténteo de novo."
     invalid_token: O testemuño de restablecemento de contrasinal non é válido. Tente restabelecer o seu contrasinal de novo.
     subtitle: Restabelecer o contrasinal
     password: Novo contrasinal
@@ -537,11 +548,13 @@ gl:
     banned: Expulsado
     deleted: Eliminado
     pending: Pendente
+    invited: Convidado
     user: Usuario
   room:
     access_code_required: Introduza un código de acceso válido para unirse á sala
     add_presentation: Engadir presentación
     copy_access: Copiar o código de acceso
+    copy_moderator_access: Copiar o código de moderador
     create_room: Crear unha sala
     create_room_error: Produciuse un erro ao crear a sala
     create_room_success: Creouse correctamente a sala
@@ -550,6 +563,8 @@ gl:
       success: Eliminouse correctamente a sala
       fail: "Non foi posíbel eliminar a sala (%{error})"
     enter_the_access_code: Introduza o código de acceso á sala
+    enter_the_moderator_access_code: Introduza o código de moderador da sala.
+    optional_moderator_access_code: "Código de moderador opcional:"
     invalid_provider: Introduciu un URL non válido. Comprobe o URL e ténteo de novo.
     invitation_description: "Foi convidado a unirse a %{name} empregando BigBlueButton. Para unirse, prema na ligazón superior e escriba o seu nome."
     invited: Foi convidado a unirse a
